@@ -27,7 +27,7 @@ export default defineComponent({
         children: [
           {
             text: "header",
-            url: getMenuPageUrl({ menuAlias: "header" }),
+            url: getMenuPageUrl("header"),
           },
         ],
       },

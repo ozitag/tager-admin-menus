@@ -48,7 +48,7 @@ import {
   useI18n,
   useToast
 } from "@tager/admin-services";
-import { BaseButton, TagerFormSubmitEvent } from "@tager/admin-ui";
+import { BaseButton, type TagerFormSubmitEvent } from "@tager/admin-ui";
 import { Page } from "@tager/admin-layout";
 
 import { getMenuByAlias, updateMenuItemList } from "../../services/requests";
