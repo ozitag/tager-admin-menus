@@ -132,7 +132,7 @@ import {
 
 import type { EditableMenuItemType } from "../MenuEditor.types";
 
-interface MenuItemDraft {
+export interface MenuItemDraft {
   label: string;
   link: Nullable<string>;
   isNewTab: boolean;

@@ -1,6 +1,6 @@
 {
   "name": "@tager/admin-menus",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "license": "MIT",
   "exports": {
     "./css": "./dist/style.css",
@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build:js": "vite build",
-    "build:package": "yarn build:js && (yarn emit-declarations || echo 'vue-tsc: type errors found, declarations emitted anyway')",
+    "build:package": "yarn build:js && yarn emit-declarations",
     "emit-declarations": "vue-tsc --project tsconfig.json --emitDeclarationOnly",
     "start": "vite",
     "prepare": "yarn build:package",
@@ -25,9 +25,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
-    "@tager/admin-layout": "^1.0.0",
-    "@tager/admin-services": "^1.0.0",
-    "@tager/admin-ui": "^1.0.1",
+    "@tager/admin-layout": "^2.0.0",
+    "@tager/admin-services": "^2.0.1",
+    "@tager/admin-ui": "^2.0.8",
     "@types/node": "16.x",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/eslint-config-typescript": "^14.9.0",
@@ -44,15 +44,15 @@
     "sass-loader": "^12.6.0",
     "typescript": "^5.9.3",
     "vite": "^6.4.5",
-    "vue": "^3.2.31",
+    "vue": "^3.5.0",
     "vue-eslint-parser": "^10.4.1",
     "vue-router": "^4.0.14",
     "vue-tsc": "^3.3.14"
   },
   "peerDependencies": {
-    "@tager/admin-services": "^1.0.0",
-    "@tager/admin-ui": "^1.0.1",
-    "vue": "^3.2.33",
+    "@tager/admin-services": "^2.0.0",
+    "@tager/admin-ui": "^2.0.0",
+    "vue": "^3.4.0",
     "vue-router": "^4.0.14"
   },
   "publishConfig": {
